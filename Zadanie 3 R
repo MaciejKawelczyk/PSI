@@ -1,1 +1,7 @@
-# PSI
+# 3. Stwórz funkcję o nazwie pole_kola, która oblicza pole powierzchni koła dla danego promienia.
+
+pole_kola <- function(r) 
+{
+return(pi * r^2)
+}
+
