@@ -1,6 +1,0 @@
-# 4. Stwórz funkcję, która oblicza długość przeciwprostokątnej w trójkącie prostokątnym.
-
-przeciwprostokatna <- function(a, b) 
-{ 
-return(sqrt(a^2 + b^2)) 
-}
