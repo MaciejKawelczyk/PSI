@@ -148,6 +148,9 @@ words <- words[!words %in% custom_stopwords]
 # Częstość słów
 freq_df <- word_frequency(words)
 
+# Chmura słów
+plot_wordcloud(freq_df, "Chmura słów", "Dark2")
+
 # Wyświetl top 10
 print(head(freq_df, 10))
 
