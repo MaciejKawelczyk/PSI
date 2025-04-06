@@ -3,7 +3,7 @@
 
 #' ---
 #' title: "Text Mining: Model Bag of Words"
-#' author: "Autor: Maciej Kawelczyk"
+#' author: "Autor: ...."
 #' date: "`r Sys.Date()`"
 #' output:
 #'   html_document:
@@ -33,8 +33,6 @@ knitr::opts_chunk$set(
 
 #' # Wymagane pakiety
 # Wymagane pakiety ----
-
-
 library(tm)
 library(tidytext)
 library(stringr)
@@ -147,6 +145,9 @@ words <- words[!words %in% custom_stopwords]
 
 # Częstość słów
 freq_df <- word_frequency(words)
+
+# Chmura słów
+plot_wordcloud(freq_df, "Chmura słów", "Dark2")
 
 # Wyświetl top 10
 print(head(freq_df, 10))
