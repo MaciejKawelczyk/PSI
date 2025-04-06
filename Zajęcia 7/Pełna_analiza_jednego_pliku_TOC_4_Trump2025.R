@@ -33,6 +33,8 @@ knitr::opts_chunk$set(
 
 #' # Wymagane pakiety
 # Wymagane pakiety ----
+
+
 library(tm)
 library(tidytext)
 library(stringr)
